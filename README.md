@@ -39,7 +39,11 @@ https://threadminions.com/2017/12/25/spring-boot-with-different-connection-pooli
 #### 使用@ConfigurationProperties的例子
 https://www.mkyong.com/spring-boot/spring-boot-configurationproperties-example/
 
-#### redis
+#### redis 参考
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-connecting-to-redis
+
+http://www.cnblogs.com/lchb/articles/7222870.html
+
 https://www.concretepage.com/spring-4/spring-data-redis-example
 
 http://www.cnblogs.com/yjmyzz/p/how-to-inject-multi-redis-instance-in-spring-boot.html
