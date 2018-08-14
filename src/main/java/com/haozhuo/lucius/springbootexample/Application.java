@@ -24,7 +24,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *Did you notice that there wasn’t a single line of XML? No web.xml file either. This web application
  *is 100% pure Java and you didn’t have to deal with configuring any plumbing or infrastructure.
  *
- *http://localhost:8080/greeting?name=User
  */
 @SpringBootApplication
 public class Application {

@@ -50,3 +50,7 @@ http://www.cnblogs.com/yjmyzz/p/how-to-inject-multi-redis-instance-in-spring-boo
 
 #### kafka参考
 https://memorynotfound.com/spring-kafka-and-spring-boot-configuration-example/
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-kafka-sending-a-message
+
+#### elasticsearch参考
+https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-connecting-to-elasticsearch-spring-data
