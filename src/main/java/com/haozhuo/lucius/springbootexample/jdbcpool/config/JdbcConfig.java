@@ -14,7 +14,7 @@ import javax.sql.DataSource;
  * 使用了HikariCP连接池
  */
 @Configuration
-public class DatabaseConfig {
+public class JdbcConfig {
 
     @Bean(name = "reportnormJdbc")
     @Primary

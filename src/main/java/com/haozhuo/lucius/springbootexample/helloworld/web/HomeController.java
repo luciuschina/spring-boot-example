@@ -1,4 +1,4 @@
-package com.haozhuo.lucius.springbootexample.helloworld;
+package com.haozhuo.lucius.springbootexample.helloworld.web;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;

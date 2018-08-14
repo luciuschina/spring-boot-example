@@ -1,4 +1,4 @@
-package com.haozhuo.lucius.springbootexample.helloworld;
+package com.haozhuo.lucius.springbootexample;
 
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;

@@ -1,5 +1,6 @@
-package com.haozhuo.lucius.springbootexample.helloworld;
+package com.haozhuo.lucius.springbootexample.helloworld.web;
 
+import com.haozhuo.lucius.springbootexample.helloworld.model.Greeting;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;

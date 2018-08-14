@@ -1,4 +1,4 @@
-package com.haozhuo.lucius.springbootexample.helloworld;
+package com.haozhuo.lucius.springbootexample.helloworld.model;
 
 import lombok.Setter;
 import lombok.Getter;
