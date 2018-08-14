@@ -10,6 +10,7 @@ import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import redis.clients.jedis.JedisPoolConfig;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -75,7 +76,7 @@ public class RedisConfig {
     public StringRedisSerializer stringRedisSerializer() {
         return new StringRedisSerializer();
     }
-    
+
     private JedisConnectionFactory buildConnectionFactory(int database) {
         JedisConnectionFactory connectionFactory = new JedisConnectionFactory(redisSentinelConfiguration(), jedisPoolConfig());
         connectionFactory.setUsePool(true);

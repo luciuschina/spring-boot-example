@@ -12,7 +12,7 @@ import java.sql.SQLException;
 public class DiseaseLabelExtractor implements RowMapper<DiseaseLabel> {
     @Override
     public DiseaseLabel mapRow(ResultSet rs, int i) throws SQLException {
-        DiseaseLabel  diseaseLabel = new DiseaseLabel();
+        DiseaseLabel diseaseLabel = new DiseaseLabel();
         diseaseLabel.setId(rs.getLong("id"));
         diseaseLabel.setKeyword(rs.getString("keyword"));
         diseaseLabel.setLabel(rs.getString("label"));

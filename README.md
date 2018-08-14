@@ -47,3 +47,6 @@ http://www.cnblogs.com/lchb/articles/7222870.html
 https://www.concretepage.com/spring-4/spring-data-redis-example
 
 http://www.cnblogs.com/yjmyzz/p/how-to-inject-multi-redis-instance-in-spring-boot.html
+
+#### kafka参考
+https://memorynotfound.com/spring-kafka-and-spring-boot-configuration-example/
