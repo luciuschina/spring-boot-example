@@ -11,6 +11,7 @@
         <module>eureka-server</module>
         <module>apps</module>
         <module>common</module>
+        <module>zuul-router</module>
     </modules>
 
 
@@ -33,26 +34,37 @@
     </parent>
 
     <dependencies>
-            <!-- swagger support -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>2.4.0</version>
-                <scope>compile</scope>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>2.4.0</version>
-                <scope>compile</scope>
-            </dependency>
-            <!--lombok-->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>1.16.16</version>
-                <scope>compile</scope>
-            </dependency>
+
+        <!-- swagger support -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.4.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.16</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -72,16 +84,16 @@
             </dependency>
             <!--&lt;!&ndash; spring cloud &ndash;&gt;-->
             <!--<dependency>-->
-                <!--<groupId>org.springframework.cloud</groupId>-->
-                <!--<artifactId>spring-cloud-starter-config</artifactId>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-config</artifactId>-->
             <!--</dependency>-->
             <!--&lt;!&ndash;<dependency>&ndash;&gt;-->
             <!--&lt;!&ndash;<groupId>org.springframework.cloud</groupId>&ndash;&gt;-->
             <!--&lt;!&ndash;<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>&ndash;&gt;-->
             <!--&lt;!&ndash;</dependency>&ndash;&gt;-->
             <!--<dependency>-->
-                <!--<groupId>org.springframework.cloud</groupId>-->
-                <!--<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
+            <!--<groupId>org.springframework.cloud</groupId>-->
+            <!--<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>-->
             <!--</dependency>-->
         </dependencies>
     </dependencyManagement>

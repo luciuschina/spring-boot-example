@@ -2,6 +2,7 @@ package com.haozhuo.springboot.apps;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
  * Although it is possible to package this service as a traditional WAR file for deployment
@@ -25,6 +26,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *is 100% pure Java and you didn’t have to deal with configuring any plumbing or infrastructure.
  *
  */
+@EnableDiscoveryClient
 @SpringBootApplication
 public class Application {
     public static void main(String[] args) {

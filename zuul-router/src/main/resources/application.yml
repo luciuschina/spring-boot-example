@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: zuul-router
+  http:
+    encoding:
+      charset: UTF-8
+
+server:
+  port: 5555
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.109.3:8761/eureka/
+
+zuul:
+  add-host-header: true
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 60000
+    maxTotalConnections: 200 # The configuration property zuul.max.host.connections has been replaced by two new properties, zuul.host.maxTotalConnections and zuul.host.maxPerRouteConnections, which default to 200 and 20 respectively.
+    maxPerRouteConnections: 20
+
+  routes:
+    myapps:  # HTTP calls to /myapps get forwarded to the test-apps service, (for example /myapps/101 is forwarded to /101).
+      path: /myapps/**  # /myapps/* only matches one level, but /myapps/** matches hierarchically.
+      serviceId: test-apps
+      loadBalanced: true
+
+
+
+
+
+
+
+
+

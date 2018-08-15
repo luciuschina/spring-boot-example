@@ -3,6 +3,12 @@
 #### swagger管理页面
 http://localhost:8080/swagger-ui.html
 
+#### eureka-server和zuul-router都起来后，使用下面url就可以访问了
+访问swagger：
+http://192.168.109.3:9998/swagger-ui.html
+其他人调用：
+http://192.168.109.3:5555/myapps/hello/greeting
+
 
 #### 可执行jar包的启动命令
 java -jar /data/work/luciuschina/spring-boot-example/target/spring-boot-example-0.0.1-SNAPSHOT.jar --spring.config.name=application --spring.config.location=file:/data/work/luciuschina/spring-boot-example/src/main/resources/config/
@@ -55,5 +61,9 @@ https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-featu
 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-connecting-to-elasticsearch-spring-data
 
 #### spring cloud参考
-https://cloud.spring.io/spring-cloud-static/spring-cloud-zookeeper/2.0.0.M4/single/spring-cloud-zookeeper.html#_registering_with_zookeeper
-https://github.com/spring-cloud/spring-cloud-zookeeper/blob/master/spring-cloud-zookeeper-sample/pom.xml
+https://cloud.spring.io/spring-cloud-netflix/spring-cloud-netflix.html
+https://www.cnblogs.com/happyflyingpig/p/7955883.html
+
+zuul
+https://cloud.spring.io/spring-cloud-netflix/multi/multi__router_and_filter_zuul.html
+

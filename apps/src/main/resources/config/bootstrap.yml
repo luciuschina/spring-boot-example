@@ -1,0 +1,30 @@
+eureka:
+  client:
+    serviceUrl:
+      #注册中心的地址
+      defaultZone: http://192.168.109.3:8761/eureka/
+
+server:
+  #当前服务端口号
+  port: 9998
+
+spring:
+  application:
+    #当前应用名称
+    name: test-apps
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

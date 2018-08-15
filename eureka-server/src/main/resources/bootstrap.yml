@@ -1,9 +1,11 @@
+# 这是standalone mode,参考：https://cloud.spring.io/spring-cloud-netflix/multi/multi_spring-cloud-eureka-server.html#spring-cloud-eureka-server-standalone-mode
+
 spring:
   application:
-    name: report-match-sev1 # 服务名称
+    name: data-group-eureka-server # 服务名称
 
 server:
-  port: ${PORT:9999} # Indicate the default PORT where this service will be started
+  port: ${PORT:8761} # Indicate the default PORT where this service will be started
 
 eureka:
   instance:
@@ -13,6 +15,11 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+
+
+
 
 
 
