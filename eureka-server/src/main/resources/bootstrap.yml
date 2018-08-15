@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: report-match-sev1 # 服务名称
+
+server:
+  port: ${PORT:9999} # Indicate the default PORT where this service will be started
+
+eureka:
+  instance:
+    hostname: 192.168.109.3
+  client:
+    registerWithEureka: false # telling the server not to register himself in the service
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
+
+
+
+
+

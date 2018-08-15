@@ -9,8 +9,7 @@ java -jar /data/work/luciuschina/spring-boot-example/target/spring-boot-example-
 
 或者：
 
-java -jar /data/work/luciuschina/spring-boot-example/target/spring-boot-example-0.0.1-SNAPSHOT.jar \
---spring.config.location=file:/data/work/luciuschina/spring-boot-example/src/main/resources/config/application.properties
+java -jar /data/work/luciuschina/spring-boot-example/target/spring-boot-example-0.0.1-SNAPSHOT.jar --spring.config.location=file:/data/work/luciuschina/spring-boot-example/src/main/resources/config/application.properties
 
 注意：在spring.config.location中可以指定文件或者目录，如果是目录必须以 / 结尾
 
@@ -54,3 +53,7 @@ https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-featu
 
 #### elasticsearch参考
 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-connecting-to-elasticsearch-spring-data
+
+#### spring cloud参考
+https://cloud.spring.io/spring-cloud-static/spring-cloud-zookeeper/2.0.0.M4/single/spring-cloud-zookeeper.html#_registering_with_zookeeper
+https://github.com/spring-cloud/spring-cloud-zookeeper/blob/master/spring-cloud-zookeeper-sample/pom.xml
