@@ -1,6 +1,7 @@
 package com.haozhuo.springboot.apps.redis.web;
 
 
+import com.haozhuo.springboot.apps.redis.model.Params;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -27,12 +28,14 @@ public class RedisController {
     }
 
     @PostMapping("/set_value_to_db0")
-    public String setValueToDB0(@RequestParam(value = "key") String key, @RequestParam(value = "value") String value) {
+    public String setValueToDB0(@RequestBody Params params) {
+        String key = params.getKey();
+        String value = params.getValue();
         redisDB0.opsForValue().set(key, value);
-        return  key + "->" + redisDB0.opsForValue().get(key);
+        return key + "->" + redisDB0.opsForValue().get(key);
     }
 
-    @GetMapping("/get_value_from_db1")
+        @GetMapping("/get_value_from_db1")
     public String getValueFromDB1(@RequestParam(value = "key") String key) {
         return redisDB1.opsForValue().get(key);
     }

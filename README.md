@@ -6,7 +6,8 @@ http://localhost:8080/swagger-ui.html
 #### eureka-server和zuul-router都起来后，使用下面url就可以访问了
 访问swagger：
 http://192.168.109.3:9998/swagger-ui.html
-其他人调用：
+
+供他人调用：
 http://192.168.109.3:5555/myapps/hello/greeting
 
 
