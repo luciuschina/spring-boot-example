@@ -24,6 +24,15 @@ java -jar /data/work/luciuschina/spring-boot-example/target/spring-boot-example-
 https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#appendix
 
 
+
+#### 提交POST请求
+curl -XPOST -H "Content-Type: application/json" http://192.168.1.152:8085/insertAll -d '{
+    "contentId":"1",
+    "conetntName":"1",
+    "isPay":0,
+    "playTime":"2017-11-11 11:11:11"
+}'
+
 ------------------------------------
 
 
