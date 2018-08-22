@@ -10,14 +10,17 @@ server:
 eureka:
   instance:
     hostname: 192.168.109.3
+    prefer-ip-address: true
+  server:
+    enableSelfPreservation: false
+    renewalPercentThreshold: 0.49
   client:
-    registerWithEureka: false # telling the server not to register himself in the service
+    registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-
-
-
+    healthcheck:
+      enabled: true
 
 
 
