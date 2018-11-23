@@ -27,6 +27,19 @@ zuul:
       serviceId: test-apps
       loadBalanced: true
 
+# zuul 超时设置
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        thread:
+          timeoutInMilliseconds: 60000
+ribbon:
+  ReadTimeout: 60000
+  SocketTimeout: 60000
+
 
 
 
